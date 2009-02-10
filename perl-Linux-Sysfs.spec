@@ -10,6 +10,7 @@ Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{module}
 Source0:	http://www.cpan.org/modules/by-module/Linux/%{module}-%{version}.tar.gz
 BuildRequires:	perl-devel
+BuildRequires:	libsysfs-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
