@@ -7,7 +7,7 @@ Version:	%perl_convert_version %{upstream_version}
 Release:	5
 License:	LGPLv2+
 Group:		Development/Perl
-URL:		http://search.cpan.org/dist/%{module}
+URL:		https://search.cpan.org/dist/%{module}
 Source0:	http://www.cpan.org/modules/by-module/Linux/%{upstream_name}-%{upstream_version}.tar.gz
 BuildRequires:	perl-devel
 BuildRequires:	sysfsutils-devel
