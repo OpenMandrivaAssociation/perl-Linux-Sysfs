@@ -1,14 +1,12 @@
 %define upstream_name Linux-Sysfs
-%define upstream_version 0.03
-
 Summary:	Perl interface to libsysfs
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	5
+Version:	0.03
+Release:	6
 License:	LGPLv2+
 Group:		Development/Perl
-URL:		https://search.cpan.org/dist/%{module}
-Source0:	http://www.cpan.org/modules/by-module/Linux/%{upstream_name}-%{upstream_version}.tar.gz
+URL:		https://metacpan.org/dist/%{module}
+Source0:	http://www.cpan.org/modules/by-module/Linux/%{upstream_name}-%{version}.tar.gz
 BuildRequires:	make
 BuildRequires:	perl-devel
 BuildRequires:	sysfsutils-devel
@@ -18,7 +16,7 @@ This module implements an interface to the kernel's sysfs
 filesystem.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -46,9 +44,7 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Wed Jul 29 2009 Tomasz Pawel Gajc <tpg@mandriva.org> 0.30.0-1mdv2010.0
 + Revision: 404046
-- rebuild using %%perl_convert_version
-
-* Tue Feb 10 2009 Tomasz Pawel Gajc <tpg@mandriva.org> 0.03-1mdv2009.1
+- rebuild using %0.03 Tue Feb 10 2009 Tomasz Pawel Gajc <tpg@mandriva.org> 0.03-1mdv2009.1
 + Revision: 339253
 - add source and spec files
 - create perl-Linux-Sysfs
